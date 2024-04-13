@@ -1,0 +1,8 @@
+n = int(input())
+lista = [0] * 2100 # 2000 porque o num vai ate 2000 + gordurinha
+for i in range(0, n):
+    num = int(input())
+    lista[num] = lista[num]+1
+for i in range(0,2100):
+    if lista[i] > 0:
+        print('{} aparece {} vez(es)'.format(i, lista[i]))
